@@ -17,6 +17,7 @@
   color: #fff;
   padding: 1rem;
   position: relative;
+  border-bottom: 1px solid #fff;
 }
 .container {
   display: grid;

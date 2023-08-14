@@ -8,8 +8,9 @@ import { Navbar } from './componentes/nav/nav.component';
 import { Header } from './componentes/header/header.component';
 import { SobreMi } from './componentes/sobreMi/sobreMi.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './componentes/skills/skills.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,6 +29,7 @@ import { RouterModule } from '@angular/router';
     SobreMi,
     EducacionComponent,
     SkillsComponent,
+    ContactoComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
