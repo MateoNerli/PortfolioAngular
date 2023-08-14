@@ -9,7 +9,7 @@ import { Header } from './componentes/header/header.component';
 import { SobreMi } from './componentes/sobreMi/sobreMi.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardSoftSkillsComponent } from './componentes/hard-soft-skills/hard-soft-skills.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,7 +27,7 @@ import { RouterModule } from '@angular/router';
     Navbar,
     SobreMi,
     EducacionComponent,
-    HardSoftSkillsComponent,
+    SkillsComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
