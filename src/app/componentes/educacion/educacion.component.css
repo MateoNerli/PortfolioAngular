@@ -45,7 +45,7 @@
 }
 .estudios .fila .item .fecha {
   display: block;
-  color: black;
+  color: rgb(188, 183, 183);
   margin-bottom: 10px;
 }
 .estudios .fila .item p {
@@ -97,7 +97,9 @@
   position: relative;
   bottom: 4px;
 }
-
+.der h4 {
+  color: rgb(50, 173, 255);
+}
 @media (max-width: 768px) {
   .estudios .fila {
     flex-direction: column;
