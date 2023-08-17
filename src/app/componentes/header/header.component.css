@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.798), rgba(0, 0, 0, 0.769)),
     url("/assets/img/fondo.jpg");
   background-size: cover;
   background-position: center center;
@@ -72,7 +72,7 @@
 }
 
 .redes a:hover {
-  background: rgb(0, 0, 255);
+  background: rgb(50, 173, 255);
   color: #fff;
 }
 

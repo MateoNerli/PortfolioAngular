@@ -1,27 +1,35 @@
-<div class="todo">
-
-    <div class="login-box">
-        <h2>Login</h2>
-        <p>Ingrese usuario y clave</p>
-
-        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-
-            <div class="user-box">
-                <input type="text" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required />
-                <label  for="nombreUsuario">Usuario</label>
-            </div>
-
-
-            <div class="user-box">
-                <input type="password" id="password" name="password" [(ngModel)]="password" required />
-                <label  for="password">Contraseña</label>
-            </div>
-
-            <button type="submit">INGRESAR</button>
-
-            <div class="cr">
-                <p class="No">Volver al inicio </p> <button type="submit" class="crear" [routerLink]="['']">Click</button>
-            </div>
-        </form>
-    </div>
-</div>
+<section>
+  <div class="login-box">
+    <form action="">
+      <h2>Log in</h2>
+      <div class="input-box">
+        <span class="icon"><i name="mail"></i></span>
+        <input type="email" required />
+        <label for="">Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><i name="lock-closed"></i></span>
+        <input type="password" required />
+        <label for="">Contraseña</label>
+      </div>
+      <div class="remember-forgot">
+        <label for=""><input type="checkbox" />RECORDAR CONTRASEÑA</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <a href="/home">
+        <button type="submit">INGRESAR</button>
+      </a>
+      <div class="register-link">
+        <p>No tenes cuenta todavia?<a href="#">Registrarte</a></p>
+      </div>
+    </form>
+  </div>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</section>

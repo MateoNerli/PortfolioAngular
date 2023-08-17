@@ -1,38 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'navbar',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class Navbar implements OnInit  {
-  isMenuOpen: boolean = false;
-  isLogged: boolean = false;
+export class Navbar implements OnInit {
 
-  constructor(private router:Router,private tokenService:TokenService ){}
+  public isMenuOpen: boolean = false;
 
-  ngOnInit(): void{
-   
-    if(this.tokenService.getToken()){
-      this.isLogged=true;
-    }else{
-      this.isLogged=false;
-    }
+  ngOnInit(): void {
   }
 
-  onLogOut():void{
-    this.tokenService.logOut();
-    window.location.reload();
-  }
 
-  login(){
-    this.router.navigate(['login'])
-  }
-
-  toggleMenu() {
+  setMenuOpen() : void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
   }
   
 }
