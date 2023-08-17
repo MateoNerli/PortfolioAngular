@@ -7,21 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Navbar } from './componentes/nav/nav.component';
 import { Header } from './componentes/header/header.component';
 import { SobreMi } from './componentes/sobreMi/sobreMi.component';
-import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardSoftSkillsComponent } from './componentes/hard-soft-skills/hard-soft-skills.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
-import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { ReactiveFormsModule} from '@angular/forms';
-import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
-import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
-import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
 import { RouterModule } from '@angular/router';
 
 
@@ -31,17 +27,13 @@ import { RouterModule } from '@angular/router';
     Header,
     Navbar,
     SobreMi,
-    ExperienciaComponent,
     EducacionComponent,
-    HardSoftSkillsComponent,
+    SkillsComponent,
+    ContactoComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    NewExperienciaComponent,
-    EditExperienciaComponent,
-    NeweducacionComponent,
-    EditeducacionComponent,
   ],
   imports: [
     BrowserModule,

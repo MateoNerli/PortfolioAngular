@@ -1,0 +1,111 @@
+.skills {
+  box-sizing: border-box;
+  background-color: #27292a;
+}
+
+.skill {
+  max-width: 1100px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title:before {
+  width: 35px;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.skill-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 0 2px 2px 0;
+  background-color: rgb(50, 173, 255);
+  transition: all 0.3s ease-in-out;
+}
+.skill-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  border-radius: 0 2px 2px 0;
+  background-color: rgb(50, 173, 255);
+  transition: all 0.3s ease-in-out;
+}
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45px;
+}
+.skill-box:hover .img {
+  transform: translateY(-10px);
+}
+.skill-title h3 {
+  color: #fff;
+  margin: 0.5rem;
+}
+.skill-icon {
+  width: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 4rem;
+  }
+}
