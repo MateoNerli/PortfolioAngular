@@ -1,6 +1,5 @@
 import { Component, OnInit,HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'navbar',
