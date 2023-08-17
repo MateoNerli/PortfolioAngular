@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { TokenService } from 'src/app/service/token.service';
 
@@ -16,8 +16,13 @@ export class Navbar implements OnInit {
 
 
   setMenuOpen() : void {
-    console.log("setMenuOpen");
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
   }
   
 }
