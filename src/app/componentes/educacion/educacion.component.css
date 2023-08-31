@@ -2,6 +2,7 @@
   background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
+  overflow: hidden;
 }
 .estudios .contenido-seccion {
   max-width: 1100px;
