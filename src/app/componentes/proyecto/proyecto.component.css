@@ -1,5 +1,6 @@
 .proyecto {
   background-color: #1e2326;
+  overflow: hidden;
 }
 .proyect {
   max-width: 1100px;

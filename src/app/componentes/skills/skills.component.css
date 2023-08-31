@@ -1,6 +1,7 @@
 .skills {
   box-sizing: border-box;
   background-color: #27292a;
+  overflow: hidden;
 }
 
 .skill {
