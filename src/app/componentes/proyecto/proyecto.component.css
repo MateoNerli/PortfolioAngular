@@ -1,11 +1,8 @@
-.proyecto {
+.section-projects {
   background-color: #1e2326;
   overflow: hidden;
 }
-.proyect {
-  max-width: 1100px;
-  margin: 0 auto;
-}
+
 .titulo {
   font-size: 28px;
   font-family: "Righteous";
@@ -16,101 +13,142 @@
   position: relative;
   border-bottom: 1px solid #fff;
 }
-
-.proyectos {
-  padding: 30px;
+.carrousel {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carrousel__flex--container {
+  padding: 0rem 6rem 0rem 6rem;
+}
+.carrousel__text {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 39.5em) {
+  .carrousel__text {
+    text-align: center;
+  }
+}
+.carrousel__container--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
-.pags img {
+@media (max-width: 39.5em) {
+  .carrousel__container--cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+}
+
+.card {
   width: 300px;
-  border-radius: 5px;
-  transition: all 0.3s;
-  border-radius: 10px;
-}
-.pags img:hover {
-  transform: scale(1.1);
+  height: 400px;
+  perspective: 1000px;
+  margin: 20px;
 }
 
-.pags {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px;
+.card__side {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
-.pags p {
-  text-align: left;
-  margin-left: 100px;
-  margin: 0 100px;
-  color: #fff;
-  width: 500px;
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+
+.card__side--front {
+  position: absolute;
+  background-color: #fff;
+}
+
+.card__picture {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card__picture img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .card__picture img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.card__picture {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card__details ul {
+  list-style: none;
+  padding: 0;
   text-align: center;
 }
 
-.pagina {
-  background: radial-gradient(
-    circle,
-    rgba(60, 60, 60, 1) 0%,
-    rgba(25, 25, 25, 1) 100%
-  );
-  z-index: 12 !important;
-}
-header {
-  height: 250vh !important;
-  width: 100vw;
-  background: rgb(60, 60, 60);
-  background: radial-gradient(
-    circle,
-    rgba(60, 60, 60, 1) 0%,
-    rgba(25, 25, 25, 1) 100%
-  );
-  z-index: 1;
+.card__details li {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-#circulo {
-  height: 10px;
-  width: 10px;
-  background: #5887e1;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  margin: 5px;
-}
-.leng {
+.card__side--back {
+  position: absolute;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
-}
-h6 {
-  color: #fff;
-  margin-left: 20px;
-  font-size: 13px !important;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 768px) {
-  .pags {
-    flex-direction: column;
-    text-align: center;
-  }
-  .pags img {
-    transition: all 0.3s;
-    border-radius: 10px;
-  }
-  .leng {
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-    padding: 10px;
-  }
+.card__price-box {
+  text-align: center;
+  padding: 20px;
 }
-@media screen and (max-width: 570px) {
-  .pags p {
-    width: 80% !important;
-    padding: 20px;
-  }
-  .leng {
-    flex-wrap: wrap;
-  }
-  #circulo {
-    flex-basis: calc(50% - 10px);
-    height: 16px !important;
-  }
+
+.card__price-value {
+  font-size: 14px;
 }
+
+/* Estilos para los botones */
+.btn__proyect {
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--flex span {
+  margin-right: 5px;
+}
+/* .ion-icon {
+  font-size: 20px;
+  margin-left: 5px;
+} */
