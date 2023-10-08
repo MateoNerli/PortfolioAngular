@@ -48,12 +48,43 @@
     row-gap: 1rem;
   }
 }
-
+.car1 {
+  background-image: url("../../../assets/img/CineHub.png");
+  background-size: cover;
+  background-position: center;
+}
+.car2 {
+  background-image: url("../../../assets/img/MEMORAMA.png");
+  background-size: cover;
+  background-position: center;
+}
+.car3 {
+  background-image: url("../../../assets/img/RelojAjedrez.png");
+  background-size: cover;
+  background-position: center;
+}
+.car4 {
+  background-image: url("../../../assets/img/mercadoLiebre.png");
+  background-size: cover;
+  background-position: center;
+}
+.car5 {
+  background-image: url("../../../assets/img/portfolio.png");
+  background-size: cover;
+  background-position: center;
+}
+.car6 {
+  background-image: url("../../../assets/img/GeneradorContra.png");
+  background-size: cover;
+  background-position: center;
+}
 .card {
+  background-color: black;
   width: 300px;
   height: 400px;
   perspective: 1000px;
   margin: 20px;
+  border-radius: 5px;
 }
 
 .card__side {
@@ -74,7 +105,7 @@
 
 .card__side--front {
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(31, 28, 28);
 }
 
 .card__picture {
@@ -99,6 +130,12 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
+}
+
+.card__details {
+  margin: 30px;
+  text-align: center;
+  color: #f0f0f0;
 }
 
 .card__details ul {
@@ -148,7 +185,34 @@
 .btn--flex span {
   margin-right: 5px;
 }
-/* .ion-icon {
-  font-size: 20px;
-  margin-left: 5px;
-} */
+
+.lenguajes {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.lenguajes i {
+  outline-color: #1e2326;
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+.lenguajes .fa-html5 {
+  color: #e34f26;
+}
+
+.lenguajes .fa-css3-alt {
+  color: #2965f1;
+}
+
+.lenguajes .fa-js-square {
+  color: #f0db4f;
+}
+
+.lenguajes .fa-node-js {
+  color: #68a063;
+}
+
+.lenguajes .fa-react {
+  color: #61dbfb;
+}
