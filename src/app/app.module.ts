@@ -17,6 +17,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
